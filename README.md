@@ -1,6 +1,6 @@
 # Android-Mitm-Proxy
 A python script that analyses android applications and logs their connections through a Mitm-proxy.
-A folder of apk's can be chosen. Every apk within that folder be be installed, launched and uninstalled on after the other.
+Every apk within a previously chosen folder will be installed, launched and uninstalled one after the other.
 During this process a separate proxy server logs every connection made from those apps.
 
 
@@ -30,9 +30,9 @@ Most of the steps for setting up the environment should be OS-independent though
 	- https://www.virtualbox.org/wiki/Downloads
 
 - download and install of genymotion:
-		genymotion.com/download
+	- genymotion.com/download
 	- dummy credentials:
-		username: bugmenot123456789, password: bugmenot
+		- username: bugmenot123456789, password: bugmenot
 	- detailed instructions for windows, linux and MacOS can be found here:
 		https://docs.genymotion.com/pdf/PDF_User_Guide/Genymotion-2.10.0-User-Guide.pdf
 
