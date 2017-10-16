@@ -1,12 +1,14 @@
 # Android-Mitm-Proxy
-A python program that analyses android applications and logs their connections through a Mitm-proxy
+A python script that analyses android applications and logs their connections through a Mitm-proxy.
+A folder of apk's can be chosen. Every apk within that folder be be installed, launched and uninstalled on after the other.
+During this process a separate proxy server logs every connection made from those apps.
 
 
 
-## Struktur
+## Structure
 
-Als Emulator wird Genymotion verwendet, da hierfür einen transpiler von ARM auf x86 zur Verfügung steht.
-
+Genymotion is used for emulating the Android OS, because a transpiler from ARM to x86 is available.
+This enables genymotion to run either ARM or x86 apps and therefore offers more flexibility.
 
 Note:
 
@@ -20,17 +22,22 @@ Note:
 
 ## How to setup
 
-- install a virtual machine if you prefer to run everything from within a VM
-- further instructions will assume you are working within a debian virtual machine
-	- specifically tested was a Ubuntu-16.04 VM
+Unfortunately it is impossible to let genymotion run in a virtual machine. Therefore 
+everythin has to be done on a physical machine.
+Most of the steps for setting up the environment should be OS-independent though.
 
-- download and install genymotion from genymotion.com/download
-	- dummy credetials: username: bugmenot123456789, password: bugmenot
-	- follow their install instructions on
+- download and install virtualbox
+	- https://www.virtualbox.org/wiki/Downloads
+
+- download and install of genymotion:
+		genymotion.com/download
+	- dummy credentials:
+		username: bugmenot123456789, password: bugmenot
+	- detailed instructions for windows, linux and MacOS can be found here:
 		https://docs.genymotion.com/pdf/PDF_User_Guide/Genymotion-2.10.0-User-Guide.pdf
 
 - go ahead and set up a virtual android device
-	- the device used during development was a Nexus-5X with API 25
+	- the device used during development was a Nexus-5X with Android 7.1 (API 25)
 
 
 
